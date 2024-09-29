@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+/* src/App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-black {
+  background-color:skyblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-gray-900 {
+  background-color:white; /* Darker gray for navbar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-gray-800 {
+  background-color:white; /* Slightly lighter gray for cards */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hover\:scale-105:hover {
+  transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transition {
+  transition: all 0.3s ease;
 }

@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "../src/components/Home";
+import VideoPlayer from "../src/components/videoplayer"  ;
+import AudioRecorder from "../src/components/AudioRecorder";
+import DialogueEditor from "../src/components/DialogueEditor";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/video" element={<VideoPlayer />} />
+        <Route path="/audio" element={<AudioRecorder />} />
+        <Route path="/dialogue" element={<DialogueEditor />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
