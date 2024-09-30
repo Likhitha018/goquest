@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
+
   const DialogueEditor = () => {
     const [originalText, setOriginalText] = useState('');
     const [translatedText, setTranslatedText] = useState('');

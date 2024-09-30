@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "../../src/App.css";
 import backgroundImage from "../../src/components/downloadgoquest.jpg";
 
+
 const Home = () => {
   return (
     <div className="bg-black text-white min-h-screen">
